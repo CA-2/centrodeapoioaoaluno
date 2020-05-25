@@ -1,0 +1,471 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/******** ESPECIFICAÇÕES GERAIS ********/
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body  {
+  background-color: navajowhite;
+  background-image: url();
+  background-size: auto 100vh;
+  font-family: Snell Roundhand, cursive;
+  height: 110vh;
+  font-size: 12px;
+}
+
+body h2 {
+  color: orange;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 2em;
+  margin-top: 3.5em;
+  text-align: center;
+  text-shadow: 3px 2.5px 2.5px rgba(0, 0, 0, 0.2);
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: #000;
+}
+
+body h3 {
+  color: orange;
+  font-family: 'Sacramento', cursive;
+  font-size: 1.7em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+body p {
+  color: rgb(255, 255, 255);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+/********* ANIMAÇÃO TÍTULO ********/
+.subtitulo {
+  animation: linear 1s animasub forwards;
+}
+
+@keyframes animasub {
+  from {
+    transform: scale(0.2) translateY(50vh);
+    opacity: .3;
+  }
+  
+  to {
+    transform: scale(1) translateY(0);
+  }
+}
+/*********** TITULO *************/
+.img-titulo {
+  box-shadow: 4px 2px 10px 2px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  object-position: center;
+  height: 35vw;
+  width: 35vw;
+  border-radius: 50%;
+  transition: transform 0.5s;
+}
+
+.img-titulo:hover {
+  transform: scale(1.1);
+}
+
+.subtitulo h1 {
+  text-align: center;
+}
+
+.subtitulo h2 {
+  color: rgb(250, 179, 27);
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 1.5em;
+  margin-top: 1.5em;
+  text-align: center;
+  -webkit-text-stroke-width: .5px;
+  -webkit-text-stroke-color: #000;
+  word-spacing: .2em;
+}
+
+.fim {
+  bottom: 0;
+  position: absolute;
+}
+
+.fim h3 {
+  color: darkorange;
+  font-size: 1.6em;
+  margin-bottom: 0em;
+}
+
+/************* LINK LOGO ***********/
+.logo {
+  background-color: white;
+  box-shadow: 4px 2px 10px 3px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  height: 15vw;
+  width: 22vw;
+  border-bottom-left-radius: 11vw;
+  border-bottom-right-radius: 11vw;
+  top: 12vw;
+  z-index: 1;
+}
+
+.logo li {
+  list-style: none;
+  font-size: 6vw;
+}
+
+.logo ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.logo a {
+  color: navajowhite;
+  display: block;
+  padding: 3.5vw;
+  position: relative;
+    letter-spacing: 0.4vw;
+    left: 1.3vw;
+    top: 0vw;
+  text-shadow: black;
+  transition: color 1s;
+  transition: transform 0.3s;
+}
+
+.logo a:hover {
+  color: orange;
+  transform: rotate(7deg);
+}
+
+/******* LINK MENU *******/
+.menu {
+  background-color: white;
+  box-shadow: 0px 2px 9px 2px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100vw;
+  height: 15vw;
+  top: 0;
+  z-index: 2;
+}
+
+.menu li {
+  list-style: none;
+  font-family: 'Sacramento', cursive;
+  font-size: 5vw;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu a {
+  color: navajowhite;
+  display: block;
+  padding: 4.5vw 2vw;
+  border-bottom-left-radius: 4vw;
+  border-bottom-right-radius: 4vw;
+  transition: background-color 2s, color 1.5s;
+}
+
+.menu a:hover {
+  background-color: orange;
+  background-image: linear-gradient( to bottom, transparent, orange);
+  color: white;
+}
+/****** ACOMPANHAMENTO ********/
+.acomp {
+  background-color: moccasin;
+  min-height: 120vh;
+  padding: 2em;
+}
+
+/******** NEWS **********/
+.news {
+  background-color: peachpuff;
+  min-height: 100vh;
+  padding: 2em;
+}
+
+.news .grid {
+  display: grid;
+  gap: 1em;
+  justify-content: center;
+}
+
+
+@media (min-width: 520px) {
+  .news .grid {
+    grid-template-columns: 200px 200px;
+  }
+}
+
+.news figure {
+  text-align: center;
+}
+
+.img-news {
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
+  object-position: left bottom;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: transform 0.5s;
+}
+
+.img-news:hover {
+  transform: scale(1.1);
+}
+
+/********* VESTIBULAR ********/
+.vest {
+  background-color: bisque;
+  padding: 2em;
+  min-height: 120vh;
+}
+
+.vest .grid {
+  display: grid;
+  justify-content: center;
+  gap: 1em;
+}
+
+.vest-iframe {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.vest-iframe:hover {
+  animation: linear .07s animavest forwards;
+}
+
+/********* ANIMAÇÃO FRAME ******/
+@keyframes animavest {
+0% {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  100% {
+    height: 253.5px;
+    width: 340px;
+    border-radius: 10%;
+  }
+}
+
+/********* CONTATOS *******/
+.contato {
+  background-color: papayawhip;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.icons {
+  margin-bottom: 3em;
+}
+
+.contato a {
+  color: rgb(235, 200, 145);
+  font-size: 3.7em;
+}
+
+.contato a:hover {
+  text-shadow: 5px 5px 1px black;
+}
+
+a.youtube:hover {
+  color: #C4302b;
+}
+
+a.instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: none;
+}
+
+a.twitter:hover {
+  color: #00acee;
+}
+
+a.whats:hover {
+  color: #44c233;
+  text-shadow: 3px 3px 1px black;
+}
+
+a.email:hover {
+  color: rgb(214, 210, 210);
+}
+
+/************ MENU RESPONSSIVO MOBILE *********/
+  @media (min-width: 600px) {
+    body {
+      font-size: 15px;
+    }
+  
+    .img-titulo {
+      height: 20vw;
+      width: 20vw;
+    }
+  
+    .logo {
+      height: 5.7vw;
+      width: 10vw;
+      border-bottom-left-radius: 4.7vw;
+      border-bottom-right-radius: 4.7vw;
+      top: 7vw;
+    }
+      
+    .logo li {
+      font-size: 3.5vw;
+    }
+      
+    .logo a {
+      padding: .1vw 2vw;
+      letter-spacing: .2vw;
+      left: .8vw;
+      top: -.3vw;
+    }
+      
+    .menu {
+      width: 105vw;
+      height: 7vw;
+    }
+    
+    .menu li {
+      font-size: 4vw;
+    }
+    
+    .menu a {
+      padding: 1vw 3vw;
+      border-bottom-left-radius: 2vw;
+      border-bottom-right-radius: 2vw;
+    }
+  }
+  
+  @media (min-width: 800px) {
+    body {
+      font-size: 18px;
+    }
+  }
+  
+  @media (min-width: 1000px) {
+    body {
+      font-size: 20px;
+    }
+  }
+
+/********* RESPONSSIVO WEB ********/
+@media (min-width: 1200px) {
+
+  /********** BODY *********/
+  body h2 {
+    margin-top: 2em;
+  }
+
+  .fim h3 {
+    font-size: 2em;
+    margin-bottom: .5em;
+  }
+  /******* MENU/LOGO ********/
+  .img-titulo {
+    height: 15vw;
+    width: 15vw;
+  }
+  
+  .logo {
+    height: 5.7vw;
+    width: 8vw;
+    border-bottom-left-radius: 3.7vw;
+    border-bottom-right-radius: 3.7vw;
+    top: 3vw;
+  }
+  
+      .logo li {
+        font-size: 2.5vw;
+      }
+      
+      .logo a {
+        padding: 1vw 2vw;
+        letter-spacing: .2vw;
+        left: .6vw;
+        top: -.3vw;
+      }
+      
+      .menu {
+        width: 105vw;
+        height: 4vw;
+      }
+      
+      .menu li {
+        font-size: 2.2vw;
+      }
+      
+      .menu a {
+        padding: .7vw 5vw;
+        border-bottom-left-radius: 2vw;
+        border-bottom-right-radius: 2vw;
+      }
+
+    /***** VEST-IFRAME ******/
+    @keyframes animavest {
+      0% {
+            transform: scale(1);
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+          }
+          
+          25% {
+            transform: scale(1.1);
+            height: 217.5px;
+            width: 270px;
+            border-radius: 40%;
+        
+          }
+          
+          50% {
+            transform: scale(1.2);
+            height: 236px;
+            width: 340px;
+            border-radius: 30%;
+          }
+          
+          75% {
+            transform: scale(1.3);
+            height: 253.5px;
+            width: 410px;
+            border-radius: 20%;
+          }
+          
+          100% {
+            transform: scale(1.4);
+            width: 480px;
+            height: 270px;
+            border-radius: 10%;
+          }
+        }
+      }
