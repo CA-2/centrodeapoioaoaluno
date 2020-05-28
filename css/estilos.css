@@ -288,7 +288,7 @@ a {
 
 .contato a {
   color: rgb(235, 200, 145);
-  font-size: 3.7em;
+  font-size: 3.5em;
 }
 
 .contato a:hover {
@@ -299,16 +299,20 @@ a.youtube:hover {
   color: #C4302b;
 }
 
+a.twitter:hover {
+  color: #00acee;
+}
+
+a.facebook:hover {
+  color: #3b5998;
+}
+
 a.instagram:hover {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: none;
-}
-
-a.twitter:hover {
-  color: #00acee;
 }
 
 a.whats:hover {
