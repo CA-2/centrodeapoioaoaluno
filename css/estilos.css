@@ -41,14 +41,14 @@ body h3 {
 }
 
 body p {
-  color: rgb(255, 255, 255);
+  color: black;
   font-family: 'Times New Roman', Times, serif;
   font-size: 1em;
   margin-top: 1em;
-  margin-bottom: 1em;
   margin-left: 2em;
   margin-right: 2em;
   text-align: center;
+  text-indent: 25px;
 }
 
 a {
@@ -195,6 +195,22 @@ a {
   padding: 2em;
 }
 
+.acomp p {
+  text-align: justify;
+}
+
+.acomp li {
+  color: black;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1em;
+  list-style-position: inside;
+  margin-top: .5em;
+  margin-left: 2em;
+  margin-right: 2em;
+  text-align: justify;
+  text-indent: 40px;
+}
+
 /******** NEWS **********/
 .news {
   background-color: peachpuff;
@@ -287,7 +303,7 @@ a {
 }
 
 .contato a {
-  color: rgb(235, 200, 145);
+  color: rgb(255, 196, 107);
   font-size: 3.5em;
 }
 
