@@ -14,7 +14,6 @@ header {
 
 body  {
   background-color: navajowhite;
-  background-image: url();
   background-size: auto 100vh;
   font-family: Snell Roundhand, cursive;
   height: 110vh;
@@ -23,13 +22,11 @@ body  {
 
 body h2 {
   color: orange;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 2em;
   margin-top: 3.5em;
   text-align: center;
   text-shadow: 3px 2.5px 2.5px rgba(0, 0, 0, 0.2);
-  -webkit-text-stroke-width: .5px;
-  -webkit-text-stroke-color: #000;
 }
 
 body h3 {
@@ -90,14 +87,12 @@ a {
 }
 
 .subtitulo h2 {
-  color: rgb(250, 179, 27);
-  font-family: Verdana, Tahoma, sans-serif;
-  font-size: 1.5em;
-  margin-top: 1.5em;
+  color: rgb(250, 160, 27);
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.7em;
+  margin-top: 1em;
   text-align: center;
-  -webkit-text-stroke-width: .5px;
-  -webkit-text-stroke-color: #000;
-  word-spacing: .2em;
+  letter-spacing: .2em;
 }
 
 .fim {
